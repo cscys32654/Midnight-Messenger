@@ -1,5 +1,5 @@
 const twilio = require('twilio');
-
+require('dotenv').config({ path: '../.env' }); // Adjust path if .env is one level up
 // Twilio credentials from env
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
